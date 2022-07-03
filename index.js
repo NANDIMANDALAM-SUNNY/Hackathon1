@@ -70,7 +70,7 @@ var rating_greater_than=''
 // fetching data from api
 const FetchData = async () => {
     try {
-        const response = await fetch(`http://makeup-api.herokuapp.com/api/v1/products.json?brand=maybelline`);
+        const response = await fetch(`https://makeup-api.herokuapp.com/api/v1/products.json?brand=maybelline`);
         data = await response.json(); 
     // Note since a lot of objects not have image_link in the starting responses, I have loop from 100 to the length of the data
         // data = data.slice(100,800)
