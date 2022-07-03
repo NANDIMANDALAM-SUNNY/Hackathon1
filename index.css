@@ -1,0 +1,123 @@
+body{
+        font-family:cursive;
+        background-color:aliceblue;
+}
+
+.header
+{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+.mydiv{
+    border-radius: 15px;
+    border: 2px solid royalblue;
+    padding-top: 20px;
+    margin:20px;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    background-color:#fbfcfa;
+}
+.myimage{
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+}
+#rightside{
+    display: grid;
+    grid-template-columns:500px 500px 500px;
+}
+
+
+.myimg{
+    height: 200px;
+    width: 200px;
+
+}
+.card {
+    padding: 10px;
+    text-align: center;
+    height: 400px;
+    width: 350px;
+    border: 2px solid navy;
+    border-radius: 20px;
+    margin: 10px;
+box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;}
+.card:hover{
+    transform: scale(1.05);
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+.color{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin: 4px;
+}
+.colors{
+    display: flex;
+    flex-wrap: wrap;
+}
+#loading{
+    width: 1000px;
+}
+
+.heading{
+    color: white;
+    background-color: navy;
+    padding: 20px;
+    width:auto;
+    text-align: center;
+}
+.mysearch{
+    margin-top: 10px;
+    font-size: 20px;
+    padding: 10px;
+    margin-left: 120px;
+    width:500px;
+    border-radius: 20px;
+}
+.myproduct,.myrate,.myprice{
+    text-align: center;
+    margin-top: 30px;
+}
+.myname
+{
+    font-weight: bold;
+    color:navy;
+    text-align: center;
+}
+#product_type{
+
+    text-align: center;
+}
+@media screen and (max-device-width: 412px) {
+    #rightside{
+        grid-template-columns: auto;
+    }
+    .mydiv{
+        border-radius: 15px;
+        padding-top: 10px;
+        margin:10px;
+        background-color:#fbfcfa;
+
+        font-size: 10px;
+    }
+    .mysearch{
+        margin-left: 0px;
+        width: 100%;
+        font-size: 15px;
+        padding: 10px;
+        border-radius: 20px;
+    } 
+    #product_type{
+        width: 100px;
+        font-size: 10px;
+        text-align: center;
+    }
+    .pricerange{
+        width: 80px;
+    }
+    .pricerange >span{
+        font-size: 10px;
+    }
+} 
